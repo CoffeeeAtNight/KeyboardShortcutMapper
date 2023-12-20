@@ -1,0 +1,17 @@
+[package]
+name = "keyboard_shortcut_mapper"
+version = "0.1.0"
+edition = "2021"
+
+# Dependencies
+[dependencies]
+device_query = "1.1.3"
+enigo = "0.1.3"
+
+[profile.release]
+lto = true
+
+# Binary Target
+[[bin]]
+name = "keyboard_shortcut_mapper"
+path = "src/main.rs"
